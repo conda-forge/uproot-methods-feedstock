@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - numpy >=1.13.1
-    - awkward >=0.7.0
+    - awkward >=0.8.0
 
 test:
   imports:
