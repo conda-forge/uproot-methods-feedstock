@@ -1,5 +1,5 @@
 {% set name = "uproot-methods" %}
-{% set version = "0.4.7" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4a00d1db828c44d2ba35801aeff7d1ea890b7dfa337895395e3b06284c14857b
+  sha256: 606bc45672bb76c176d6469aebf72f7be0010b26ce95b7aec63b2c09780bf8d1
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   run:
     - python
     - numpy >=1.13.1
-    - awkward >=0.8.0
+    - awkward >=0.9.0
 
 test:
   imports:
