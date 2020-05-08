@@ -1,5 +1,5 @@
 {% set name = "uproot-methods" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5acbcc7c8b192a5a91dd49026e29d7a0ca2b9d80266a67bc49af1c2a94caa707
+  sha256: 7f110208a3a2aa9b4d6da11233fd0f206ea039b52bca4bfe312f1b9dcf788476
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
@@ -32,7 +32,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Pythonic behaviors for non-I/O related ROOT classes.'
+  summary: Pythonic behaviors for non-I/O related ROOT classes.
   dev_url: https://github.com/scikit-hep/{{ name }}
 
 extra:
