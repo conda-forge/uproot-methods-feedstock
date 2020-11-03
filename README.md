@@ -5,11 +5,11 @@ Home: https://github.com/scikit-hep/uproot-methods
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/uproot-methods-feedstock/blob/master/LICENSE.txt)
 
 Summary: Pythonic behaviors for non-I/O related ROOT classes.
 
-
+Development: https://github.com/scikit-hep/uproot-methods
 
 Current build status
 ====================
