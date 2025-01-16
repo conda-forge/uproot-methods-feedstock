@@ -6,24 +6,26 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 9e1b424582f8c48cd18c60bef71c81d1bd19c3f4b0bc34f329458958a65dce35
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python =2.7|>=3.5
+    - python {{ python_min }}
     - pip
   run:
-    - python =2.7|>=3.5
+    - python >={{ python_min }}
     - numpy >=1.13.1
     - awkward >=0.11.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - uproot_methods
 
